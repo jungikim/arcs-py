@@ -531,7 +531,7 @@ if __name__ == '__main__':
     parser.add_argument('--train', help='CONLL training file', required=True)
     parser.add_argument('--test', help='CONLL testing file', required=True)
     parser.add_argument('--fx', help='Feature extractor', default='ex')
-    parser.add_argument('--n', help='Number of passes over training data', default=15)
+    parser.add_argument('--n', help='Number of passes over training data', type=int, default=15)
     parser.add_argument('-v', action='store_true')
     opts = parser.parse_args()
     
