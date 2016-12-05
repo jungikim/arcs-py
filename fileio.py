@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import csv
 
 WORD = 0
@@ -11,7 +14,7 @@ def read_conll_deps(f):
     sentences = []
 
     with open(f) as csvfile:
-        reader = csv.reader(csvfile, delimiter='\t')
+        reader = csv.reader(csvfile, delimiter='\t', quoting=csv.QUOTE_NONE)
 
         sentence = []
 
